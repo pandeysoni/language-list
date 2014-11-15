@@ -1,0 +1,45 @@
+{
+  "name": "language-list",
+  "version": "0.0.1",
+  "description": "Map Stores ISO 639-1 language codes to language names and vice versa.
+",
+  "main": "language-list.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.4.8"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandeysoni/language-list"
+  },
+  "keywords": [
+    "measure",
+    "measures"
+  ],
+  "author": {
+    "name": "sonipandey",
+    "email": "sonipandey.71@gmail.com"
+  },
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/pandeysoni/language-list/issues"
+  },
+  "homepage": "https://github.com/pandeysoni/language-list",
+  "_npmUser": {
+    "name": "soni",
+    "email": "sonipandey.71@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "soni",
+      "email": "soni"
+    }
+  ],
+  "_resolved": "https://registry.npmjs.org/language-list/-/language-list-0.0.3.tgz"
+}
