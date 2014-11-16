@@ -9,7 +9,7 @@ var languageNameMap = {};
 var languageCodeMap = {};
 data.forEach(function(language) {
   languageNameMap[language.language.toLowerCase()] = language.code;
-  codeMap[language.code.toLowerCase()] = language.language;
+  languageCodeMap[language.code.toLowerCase()] = language.language;
 });
 
 module.exports = LanguageList;
@@ -22,7 +22,7 @@ LanguageList.prototype.getLanguageCode = function getLanguageCode(name) {
 };
 
 LanguageList.prototype.getLanguageName = function getLanguageNames(code) {
-  return codeMap[code.toLowerCase()];
+  return languageCodeMap[code.toLowerCase()];
 };
 
 LanguageList.prototype.getLanguageNames = function getLanguageNames() {

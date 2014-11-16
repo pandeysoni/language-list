@@ -1,8 +1,7 @@
 {
   "name": "language-list",
-  "version": "0.0.1",
-  "description": "Map Stores ISO 639-1 language codes to language names and vice versa.
-",
+  "version": "0.0.3",
+  "description": "Map Stores ISO 639-1 language codes to language names and vice versa.",
   "main": "language-list.js",
   "directories": {
     "test": "test"
@@ -19,8 +18,9 @@
     "url": "https://github.com/pandeysoni/language-list"
   },
   "keywords": [
-    "measure",
-    "measures"
+    "language",
+    "languages",
+    "language-list"
   ],
   "author": {
     "name": "sonipandey",
