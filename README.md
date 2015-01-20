@@ -23,11 +23,12 @@ var languages = require('language-list')();
 All input is case-insensitive.
 
 ## getLanguageName(languageCode)
-.
-Returns the language name for that language code .
+
+Expects the language code.
+Returns the language name for that language code.
 If not found, it returns `undefined`.
 
-## getLanguageName(languageName)
+## getLanguageCode(languageName)
 
 Expects the language name.
 Returns the language code for that language.
