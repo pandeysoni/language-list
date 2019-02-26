@@ -27,7 +27,7 @@ LanguageList.prototype.getLanguageName = function getLanguageNames(code) {
 
 LanguageList.prototype.getLanguageNames = function getLanguageNames() {
   return data.map(function(language) {
-    return language.name;
+    return language.language;
   });
 };
 
