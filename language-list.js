@@ -1,7 +1,6 @@
-'use strict'
 
 var data = require('./data.json');
-
+var stictLang = require('./strict-languages');
 /**
  * Precompute measure and code lookups.
  */
@@ -10,6 +9,12 @@ var languageCodeMap = {};
 data.forEach(function(language) {
   languageNameMap[language.language.toLowerCase()] = language.code;
   languageCodeMap[language.code.toLowerCase()] = language.language;
+});
+var stictlanguageNameMap = {};
+var stictlanguageCodeMap = {};
+stictLang.forEach(function(language) {
+  stictlanguageNameMap[language.language.toLowerCase()] = language.code;
+  stictlanguageCodeMap[language.code.toLowerCase()] = language.language;
 });
 
 module.exports = LanguageList;
@@ -23,6 +28,14 @@ LanguageList.prototype.getLanguageCode = function getLanguageCode(name) {
 
 LanguageList.prototype.getLanguageName = function getLanguageNames(code) {
   return languageCodeMap[code.toLowerCase()];
+};
+
+LanguageList.prototype.getStictLanguageCode = function getStictLanguageCode(name) {
+  return stictlanguageNameMap[name.toLowerCase()];
+};
+
+LanguageList.prototype.getStictLanguageName = function getStictLanguageName(code) {
+  return stictlanguageCodeMap[code.toLowerCase()];
 };
 
 LanguageList.prototype.getLanguageNames = function getLanguageNames() {
